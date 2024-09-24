@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SZM_orarend SYSTEM "FU7OMC_orarend.dtd">
+
+<SZM_orarend>
+<ora id="a0" tipus="Elmélet">
+    <targy>Web Technológiák 1</targy>
+    <idopont>
+        <nap>Hétfő</nap>
+        <tol>10:00</tol>
+        <ig>12:00</ig>
+    </idopont>
+    <helyszin>I A2</helyszin>
+    <oktato>Agárdi Anita</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+
+<ora id="a1" tipus="Gyakorlat">
+    <targy>Angol Műszaki Nyelv</targy>
+    <idopont>
+        <nap>Hétfő</nap>
+        <tol>12:00</tol>
+        <ig>14:00</ig>
+    </idopont>
+    <helyszin>A1 214</helyszin>
+    <oktato>Lévai-Asztalos Erzsébet</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a2" tipus="Gyakorlat">
+    <targy>Web Technológiák 1</targy>
+    <idopont>
+        <nap>Hétfő</nap>
+        <tol>14:00</tol>
+        <ig>16:00</ig>
+    </idopont>
+    <helyszin>In/101</helyszin>
+    <oktato>Agárdi Anita</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a3" tipus="Elmélet">
+    <targy>Mobil Programozás</targy>
+    <idopont>
+        <nap>Hétfő</nap>
+        <tol>16:00</tol>
+        <ig>18:00</ig>
+    </idopont>
+    <helyszin>In/101</helyszin>
+    <oktato>Agárdi Anita</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a4" tipus="Gyakorlat">
+    <targy>Mobil Programozás</targy>
+    <idopont>
+        <nap>Hétfő</nap>
+        <tol>18:00</tol>
+        <ig>20:00</ig>
+    </idopont>
+    <helyszin>In/101</helyszin>
+    <oktato>Agárdi Anita</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+
+<ora id="a5" tipus="Elmélet">
+    <targy>Windows Rendszergazda</targy>
+    <idopont>
+        <nap>Kedd</nap>
+        <tol>8:00</tol>
+        <ig>10:00</ig>
+    </idopont>
+    <helyszin>In/103</helyszin>
+    <oktato>Wagner György</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a6" tipus="Gyakrolat">
+    <targy>Webes adatkezelő környezetek</targy>
+    <idopont>
+        <nap>Kedd</nap>
+        <tol>12:00</tol>
+        <ig>14:00</ig>
+    </idopont>
+    <helyszin>In/103</helyszin>
+    <oktato>Dr. Bednarik László</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+
+<ora id="a7" tipus="Gyakorlat">
+    <targy>Mesterséges Intelligencia</targy>
+    <idopont>
+        <nap>Szerda</nap>
+        <tol>10:00</tol>
+        <ig>12:00</ig>
+    </idopont>
+    <helyszin>X A1 2018</helyszin>
+    <oktato>Fazekas Levente</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a8" tipus="Gyakorlat">
+    <targy>Windows Rendszergazda</targy>
+    <idopont>
+        <nap>Szerda</nap>
+        <tol>12:00</tol>
+        <ig>14:00</ig>
+    </idopont>
+    <helyszin>In/101</helyszin>
+    <oktato>Wagner György</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a9" tipus="Elmélet">
+    <targy>Webes adatkezelő környezetek</targy>
+    <idopont>
+        <nap>Szerda</nap>
+        <tol>14:00</tol>
+        <ig>16:00</ig>
+    </idopont>
+    <helyszin>In/102</helyszin>
+    <oktato>Dr. Kovács László</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+<ora id="a10" tipus="Elmélet">
+    <targy>Mesterséges Intelligencia</targy>
+    <idopont>
+        <nap>Szerda</nap>
+        <tol>16:00</tol>
+        <ig>18:00</ig>
+    </idopont>
+    <helyszin>XXXII A1</helyszin>
+    <oktato>Kunné Dr. Tamás Judit</oktato>
+    <szak>Mérnökinformatikus BSc</szak>
+</ora>
+</SZM_orarend>

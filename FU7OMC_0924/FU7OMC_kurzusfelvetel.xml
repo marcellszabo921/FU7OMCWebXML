@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FU7OMC_kurzusfelvetel SYSTEM "FU7OMC_kurzusfelvetel.dtd">
+<FU7OMC_kurzusfelvetel tanév="2024/25 I." egyetem="Miskolci Egyetem">
+    <hallgato>
+        <hnev>Szabó Marcell</hnev>
+        <szulev>2003</szulev>
+        <szak evf="3">Mérnökinformatikus BSc</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="GEIAL331-B2" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Web Technológiák 1</kurzusnev>
+            <kredit>5</kredit>
+            <hely>I A2</hely>
+            <idopont>Hétfő 10:00-12:00</idopont>
+            <idopont>Hétfő 14:00-16:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+        <kurzus id="MEIOKMUSZAN1" jovahagyas="igen" nyelv="angol">
+            <kurzusnev>Angol Műszaki Nyelv</kurzusnev>
+            <kredit>0</kredit>
+            <hely>A1 214</hely>
+            <idopont>Hétfő 12:00-14:00</idopont>
+            <oktato>Lévai-Asztalos Erzsébet</oktato>
+        </kurzus>
+        <kurzus id="GEIAK130-B2" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Mesterséges Intelligencia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>X A1 2018</hely>
+            <idopont>Szerda 10:00-12:00</idopont>
+            <idopont>Szerda 16:00-18:00</idopont>
+            <oktato>Kunné Dr. Tamás Judit</oktato>
+        </kurzus>
+        <kurzus id="GEIAL335-B2" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Mobil Programozás</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/101</hely>
+            <idopont>Hétfő 16:00-18:00</idopont>
+            <idopont>Hétfő 18:00-20:00</idopont>
+            <oraado>Agárdi Anita</oraado>
+        </kurzus>
+        <kurzus id="GEIAL32K-B2" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Webes adatkezelő környezetek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>X A1 2018</hely>
+            <idopont>Kedd 12:00-14:00</idopont>
+            <idopont>Szerda 16:00-18:00</idopont>
+            <oktato>Dr. Kovács László József</oktato>
+        </kurzus>
+        <kurzus id="GEIAL30A-B2" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Windows rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <hely>X A1 2018</hely>
+            <idopont>Kedd 8:00-10:00</idopont>
+            <idopont>Szerda 12:00-14:00</idopont>
+            <oktato>Dr. Wagner György</oktato>
+        </kurzus>
+    </kurzusok>
+</FU7OMC_kurzusfelvetel>

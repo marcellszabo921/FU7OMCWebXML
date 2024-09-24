@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mozi [
+  <!ELEMENT mozi (film*)>
+  <!ELEMENT film (rendezo+, szinesz+, iro+)>
+  <!ELEMENT rendezo (#PCDATA)>
+  <!ELEMENT szinesz (#PCDATA)>
+  <!ELEMENT iro (#PCDATA)>
+  <!ATTLIST film mufaj (horror | drama | vigjatek) #REQUIRED>
+  <!ATTLIST film id ID #REQUIRED>
+  <!ATTLIST rendezo id ID #REQUIRED>
+  <!ATTLIST szinesz id ID #REQUIRED>
+  <!ATTLIST iro id ID #REQUIRED>
+]>
+<mozi>
+  <film id="txn_nxm_2jb" mufaj="horror">
+    <rendezo id="nzk_4xm_2jb">alex</rendezo>
+    <szinesz id="u5q_4xm_2jb">Madison Ivy</szinesz>
+    <iro id="trv_4xm_2jb">John Doe</iro>
+  </film>
+</mozi>
