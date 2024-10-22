@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="Y4O4X0_orarend1.xsd" --><SZK_orarend>
-
-    <ora id="O0" tipus="elmelet">
-        <targy>Elektrotechnika és elektronika</targy>
-        <idopont>
-            <nap>Hétfő</nap>
-            <tol>8:00</tol>
-            <ig>10:00</ig>
-        </idopont>
-        <helyszin>A2/III. Előadó</helyszin>
-        <oktato>Szabó Nórbert</oktato>
-        <szak>Mérnökinformatika BSc</szak>
-    </ora>
+ xsi:noNamespaceSchemaLocation="FU7OMC_orarend1.xsd" --><SZM_orarend>
     <ora id="O1" tipus="elmelet">
         <targy>Webtechnológia I</targy>
         <idopont>
@@ -31,7 +19,7 @@
             <ig>14:00</ig>
         </idopont>
         <helyszin>A2/223</helyszin>
-        <oktato>Dorkó Dóra</oktato>
+        <oktato>Lévai-Asztalos Erzsébet</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
     <ora id="O4" tipus="gyakorlat">
@@ -89,17 +77,6 @@
         <oktato>Dr Bednarik László</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-     <ora id="O9" tipus="gyakorlat">
-        <targy>Elektrotechnika és elektronika</targy>
-        <idopont>
-            <nap>Szerda</nap>
-            <tol>8:00</tol>
-            <ig>10:00</ig>
-        </idopont>
-        <helyszin>A1/310</helyszin>
-        <oktato>Szabó Norbert</oktato>
-        <szak>Mérnökinformatika BSc</szak>
-    </ora>
     <ora id="O10" tipus="gyakorlat">
         <targy>Mesterséges intelinegcia</targy>
         <idopont>
@@ -144,4 +121,4 @@
         <oktato>Kunné Dr. Tamás Judit</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-</SZK_orarend>
+</SZM_orarend>

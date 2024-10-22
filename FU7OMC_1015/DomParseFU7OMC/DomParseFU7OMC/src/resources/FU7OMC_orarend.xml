@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="FU7OMC_orarend1.xsd" -->
     
-<SZM_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="FU7OMC_orarend1.xsd">
+<SZM_orarend>
     <ora id="O1" tipus="elmelet">
         <targy>Webtechnológia I</targy>
         <idopont>
@@ -21,7 +21,7 @@
             <ig>14:00</ig>
         </idopont>
         <helyszin>A2/223</helyszin>
-        <oktato></oktato>
+        <oktato>Lévai-Asztalos Erzsébet</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
     <ora id="O4" tipus="gyakorlat">
