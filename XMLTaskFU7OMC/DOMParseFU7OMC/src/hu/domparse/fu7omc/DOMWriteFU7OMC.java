@@ -18,22 +18,26 @@ public class DOMWriteFU7OMC {
         this.element = element;
     }
 
-    public void printXmlStructure(Element element, String indent){
-        System.out.println("<" + element.getNodeName() + ">");
+    public void printXmlStructure(Element element, String indent) {
+        // Kiírja az aktuális elemet a megfelelő behúzással
+        System.out.println(indent + "<" + element.getNodeName() + ">");
 
         NodeList nodeList = element.getChildNodes();
-        for(int i = 0; i < nodeList.getLength(); i++) {
+        for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
-            if(node instanceof Element){
-                printXmlStructure((Element) node, indent + "  ");
-            } else if (node.getNodeType() == Node.TEXT_NODE){
+            if (node instanceof Element) {
+                // Rekurzív hívás a gyermek elemekre
+                printXmlStructure((Element) node, indent + "  "); // A behúzás növelése
+            } else if (node.getNodeType() == Node.TEXT_NODE) {
                 String content = node.getTextContent().trim();
-                if(!content.isEmpty()) {
+                if (!content.isEmpty()) {
+                    // A szöveges tartalom kiírása a megfelelő behúzással
                     System.out.println(indent + "  " + content);
                 }
             }
         }
-        System.out.println("</" + element.getNodeName() + ">");
+        // Záró tag kiírása a megfelelő behúzással
+        System.out.println(indent + "</" + element.getNodeName() + ">");
     }
 
     public void writeXmlFile(Document doc, String filePath) throws Exception{
