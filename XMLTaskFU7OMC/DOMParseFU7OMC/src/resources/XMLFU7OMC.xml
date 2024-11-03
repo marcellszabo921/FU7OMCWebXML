@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
+    <Gyar Gyarkod="A1">
+        <Nev></Nev> 
+        <Cim>
+            <Varos></Varos>
+            <Utca></Utca>
+            <Hazszam></Hazszam>
+        </Cim>
+        <Adoszam></Adoszam>
+        <Muszak_Vezeto M_kod="B1">
+            <Nev></Nev> 
+            <Eletkor></Eletkor>
+            <Vegzettseg></Vegzettseg>
+        </Muszak_Vezeto>
+        <Szakmunkas Sz_kod="C1">
+            <Nev></Nev> 
+            <Eletkor></Eletkor>
+            <Vegzettseg></Vegzettseg>
+        </Szakmunkás>
+        <Gyakornok Gy_kod="D1">
+            <Nev></Nev> 
+            <Gyakorlat>
+                <Kezdete></Kezdete>
+                <Idotartam></Idotartam>
+            </Gyakorlat>
+            <Eletkor></Eletkor>
+        </Gyakornok>
+        <Megrendelo Mkod="E1">
+            <Nev></Nev> 
+            <Cim>
+                <Varos></Varos>
+                <Utca></Utca>
+                <Hazszam></Hazszam>
+            </Cim>
+            <Telefonszam></Telefonszam>
+        </Megrendelo>
+        <Rendeles Rkod="F1" GyarMR="G1">
+            <Termek></Termek>
+            <Osszeg></Osszeg>
+            <Datum></Datum>
+        </Rendeles>
+    </Gyar>
+</Ipar>
