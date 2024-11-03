@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6397aa0-848f-4c9e-bea2-710baddc21e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMModifyFU7OMC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMQueryFU7OMC.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMReadFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMReadFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

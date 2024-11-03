@@ -25,7 +25,7 @@ public class DOMReadFU7OMC {
     }
 
     public void query(Document dom) {
-        NodeList classList = dom.getElementsByTagName("ora");
+        NodeList classList = dom.getElementsByTagName("Gyar");
         for(int i = 0; i < classList.getLength(); i++) {
             Node node = classList.item(i);
             NodeList childList = node.getChildNodes();
