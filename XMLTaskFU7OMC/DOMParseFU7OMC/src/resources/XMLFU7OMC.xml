@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
     <Gyar Gyarkod="A1">
         <Nev>SínCsináló Kft.</Nev> 
         <Cim>
-            <Varos>Miskolc,</Varos>
+            <Varos>Szeged</Varos>
             <Utca>Szép lány</Utca>
             <Hazszam>54</Hazszam>
         </Cim>
@@ -41,7 +39,7 @@
             </Cim>
             <Telefonszam>+36 20 456 4353</Telefonszam>
         </Megrendelo>
-        <Rendeles Rkod="R1" GyarMR="GYR1">
+        <Rendeles GyarMR="GYR1" Rkod="R1">
             <Termek>Vasúti Sín</Termek>
             <Osszeg>12,345,654 Ft</Osszeg>
             <Datum>2024.03.21.</Datum>
@@ -87,7 +85,7 @@
             </Cim>
             <Telefonszam>+36 30 765 9812</Telefonszam>
         </Megrendelo>
-        <Rendeles Rkod="R2" GyarMR="GYR2">
+        <Rendeles GyarMR="GYR2" Rkod="R2">
             <Termek>XXL Lakat</Termek>
             <Osszeg>378.990 Ft</Osszeg>
             <Datum>2024.07.01.</Datum>
@@ -133,7 +131,7 @@
             </Cim>
             <Telefonszam>+36 20 456 4353</Telefonszam>
         </Megrendelo>
-        <Rendeles Rkod="R1" GyarMR="GYR1">
+        <Rendeles GyarMR="GYR1" Rkod="R1">
             <Termek>Vasúti Sín</Termek>
             <Osszeg>12,345,654 Ft</Osszeg>
             <Datum>2024.03.21.</Datum>
@@ -179,7 +177,7 @@
             </Cim>
             <Telefonszam>+36 70 685 0832</Telefonszam>
         </Megrendelo>
-        <Rendeles Rkod="R3" GyarMR="GYR3">
+        <Rendeles GyarMR="GYR3" Rkod="R3">
             <Termek>46-os Bőr bakkancs</Termek>
             <Osszeg>57.990 Ft</Osszeg>
             <Datum>2024.10.29.</Datum>
