@@ -1,55 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
+<Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
     <Gyar Gyarkod="A1">
-        <Nev>SínCsináló Kft.</Nev>
+        <Nev>AcélMűvek</Nev>
         <Cim>
             <Varos>Miskolc</Varos>
             <Utca>Szép lány</Utca>
             <Hazszam>54</Hazszam>
         </Cim>
         <Adoszam>111111111-1-11</Adoszam>
-        <!-- Több műszakvezető -->
-        <MuszakVezeto M_kod="M1">
+        <MuszakVezeto Kod="M1">
             <Nev>Trombitás Elemér</Nev>
             <Vegzettseg>Lakatos</Vegzettseg>
             <Eletkor>62</Eletkor>
         </MuszakVezeto>
-        <MuszakVezeto M_kod="M2">
+        <MuszakVezeto Kod="M2">
             <Nev>Nagy Ferenc</Nev>
             <Vegzettseg>Gépész</Vegzettseg>
             <Eletkor>55</Eletkor>
         </MuszakVezeto>
-        <!-- Több szakmunkás -->
-        <Szakmunkas Sz_kod="SZ1">
+        <Szakmunkas Kod="SZ1">
             <Nev>Szabó Gábor</Nev>
             <Vegzettseg>Kisegítő</Vegzettseg>
             <Eletkor>32</Eletkor>
         </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ2">
+        <Szakmunkas Kod="SZ2">
             <Nev>Kovács László</Nev>
             <Vegzettseg>Villanyszerelő</Vegzettseg>
             <Eletkor>45</Eletkor>
         </Szakmunkas>
-        <!-- Több gyakornok -->
-        <Gyakornok Gy_kod="Gyak1">
+        <Gyakornok Kod="Gyak1">
             <Nev>Illés Dániel</Nev>
             <Eletkor>20</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.02.14</Kezdete>
-                <Idotartam>8 hét</Idotartam>
-            </Gyakorlat>
         </Gyakornok>
-        <Gyakornok Gy_kod="Gyak2">
+        <Gyakornok Kod="Gyak2">
             <Nev>Hegedűs Emese</Nev>
             <Eletkor>22</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.02.14</Kezdete>
-                <Idotartam>8 hét</Idotartam>
-            </Gyakorlat>
         </Gyakornok>
-        <!-- Több megrendelő -->
-        <Megrendelo Mkod="M1">
+        <Megrendelo>
             <Nev>Máv Zrt.</Nev>
             <Cim>
                 <Varos>Budapest</Varos>
@@ -58,7 +45,7 @@
             </Cim>
             <Telefonszam>+36 20 456 4353</Telefonszam>
         </Megrendelo>
-        <Megrendelo Mkod="M2">
+        <Megrendelo>
             <Nev>Volánbusz Zrt.</Nev>
             <Cim>
                 <Varos>Debrecen</Varos>
@@ -67,15 +54,14 @@
             </Cim>
             <Telefonszam>+36 30 123 4567</Telefonszam>
         </Megrendelo>
-        <!-- Több termék a rendelésben -->
-        <Rendeles GyarMR="GYR1" Rkod="R1">
+        <Rendeles>
             <Termek>Vasúti Sín</Termek>
             <Termek>Acél Lemez</Termek>
             <Termek>Csavar</Termek>
             <Osszeg>12345654.00</Osszeg>
             <Datum>2024-03-21</Datum>
         </Rendeles>
-        <Rendeles GyarMR="GYR2" Rkod="R2">
+        <Rendeles>
             <Termek>Betongerenda</Termek>
             <Termek>Acélcső</Termek>
             <Osszeg>5789000.00</Osszeg>

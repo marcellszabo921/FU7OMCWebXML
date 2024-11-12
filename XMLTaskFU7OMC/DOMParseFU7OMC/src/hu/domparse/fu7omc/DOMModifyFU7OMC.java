@@ -1,54 +1,69 @@
 package hu.domparse.fu7omc;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import java.io.File;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 public class DOMModifyFU7OMC {
-    private Document document;
-
-    public DOMModifyFU7OMC(Document document) {
-        this.document = document;
+    public static void main(String[] args) {
+        // Módosító metódus meghívása a megadott XML fájlra
+        modifyXMLElements("./XMLFU7OMC.xml");
     }
 
-    // Adat módosítása egy adott Gyar kód alapján
-    public void modifyGyarKod(String gyarKod, String newNev, String newCim) {
-        NodeList gyarList = document.getElementsByTagName("Gyar");
-        boolean found = false; // Flag for found status
+    private static void modifyXMLElements(String filePath) {
+        try {
+            // XML fájl beolvasása
+            File xmlFile = new File(filePath);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document document = dBuilder.parse(xmlFile);
 
-        for (int i = 0; i < gyarList.getLength(); i++) {
-            Node gyarNode = gyarList.item(i);
-            if (gyarNode.getAttributes().getNamedItem("Gyarkod").getNodeValue().equals(gyarKod)) {
-                found = true; // Set found flag to true
-                NodeList childList = gyarNode.getChildNodes();
-                for (int j = 0; j < childList.getLength(); j++) {
-                    Node child = childList.item(j);
-                    if (child.getNodeName().equals("Nev")) {
-                        // Csak akkor frissítjük, ha az új név nem üres
-                        if (!newNev.trim().isEmpty()) {
-                            child.setTextContent(newNev);
-                        }
-                    }
-                    if (child.getNodeName().equals("Cim")) {
-                        // Módosítjuk a címet is, ha nem üres
-                        NodeList cimChildren = child.getChildNodes();
-                        for (int k = 0; k < cimChildren.getLength(); k++) {
-                            Node cimChild = cimChildren.item(k);
-                            if (cimChild.getNodeName().equals("Varos")) {
-                                // Csak akkor frissítjük, ha az új város nem üres
-                                if (!newCim.trim().isEmpty()) {
-                                    cimChild.setTextContent(newCim); // Példa: új város beállítása
-                                }
-                            }
-                        }
-                    }
-                }
-                System.out.println("Módosítva: Gyar kód: " + gyarKod + ", új név: " + (newNev.trim().isEmpty() ? "nem változott" : newNev) + ", új cím: " + (newCim.trim().isEmpty() ? "nem változott" : newCim));
-                return; // Exit after modification
-            }
-        }
-        if (!found) {
-            System.out.println("Gyar kód nem található: " + gyarKod);
+            // 1. Módosítás: Műszakvezető név módosítása
+            NodeList muszakVezetoList = document.getElementsByTagName("MuszakVezeto");
+            Element muszakVezetoElement = (Element) muszakVezetoList.item(0); // Első műszakvezető
+            muszakVezetoElement.getElementsByTagName("Nev").item(0).setTextContent("László Béla");
+
+            // 2. Módosítás: Szakmunkás életkorának módosítása
+            NodeList szakmunkasList = document.getElementsByTagName("Szakmunkas");
+            Element szakmunkasElement = (Element) szakmunkasList.item(2); // Harmadik szakmunkás
+            szakmunkasElement.getElementsByTagName("Eletkor").item(0).setTextContent("45");
+
+            // 3. Módosítás: Gyakornok név módosítása
+            NodeList gyakornokList = document.getElementsByTagName("Gyakornok");
+            Element gyakornokElement = (Element) gyakornokList.item(1); // Második gyakornok
+            gyakornokElement.getElementsByTagName("Nev").item(0).setTextContent("Kiss Anna");
+
+            // 4. Módosítás: Megrendelő címének frissítése
+            NodeList megrendeloList = document.getElementsByTagName("Megrendelo");
+            Element megrendeloElement = (Element) megrendeloList.item(0); // Első megrendelő
+            Element cimElement = (Element) megrendeloElement.getElementsByTagName("Cim").item(0);
+            cimElement.getElementsByTagName("Varos").item(0).setTextContent("Debrecen");
+            cimElement.getElementsByTagName("Utca").item(0).setTextContent("Kossuth Lajos utca");
+            cimElement.getElementsByTagName("Hazszam").item(0).setTextContent("101");
+
+            // 5. Módosítás: Rendelés termék árának módosítása
+            NodeList rendelesList = document.getElementsByTagName("Rendeles");
+            Element rendelesElement = (Element) rendelesList.item(0); // Első rendelés
+            NodeList termekNodes = rendelesElement.getElementsByTagName("Termek");
+            Element termekElement = (Element) termekNodes.item(1); // Második termék
+            termekElement.getElementsByTagName("Ar").item(0).setTextContent("19999");
+
+            // A módosított XML kiírása a konzolra
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(document);
+
+            // A módosított XML fájl konzolra történő kiíratása
+            StreamResult consoleResult = new StreamResult(System.out);
+            transformer.transform(source, consoleResult);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

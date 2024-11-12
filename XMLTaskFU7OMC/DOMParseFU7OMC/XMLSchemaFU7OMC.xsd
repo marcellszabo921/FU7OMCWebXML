@@ -1,44 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+    <!-- Kor típus (1 és 100 közötti egész szám) -->
     <xs:simpleType name="korTipus">
         <xs:restriction base="xs:integer">
-            <xs:minInclusive value="1"/>
-            <xs:maxExclusive value="100"/>
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxExclusive value="100"></xs:maxExclusive>
         </xs:restriction>
     </xs:simpleType>
-
-    <xs:complexType name="szemelyTipus">
+    <!-- Személy típus, amely tartalmazza a név, végzettség és életkor mezőket -->
+    <xs:complexType name="szemelyzet">
         <xs:sequence>
-            <xs:element name="Nev" type="xs:string"/>
-            <xs:element name="Vegzettseg" type="xs:string" minOccurs="0"/>
-            <xs:element name="Eletkor" type="korTipus"/>
+            <xs:element name="Nev" type="xs:string"></xs:element>
+            <xs:element name="Vegzettseg" type="xs:string"></xs:element>
+            <xs:element name="Eletkor" type="korTipus" />
         </xs:sequence>
-        <xs:attribute name="Kod" type="xs:string" use="required"/>
     </xs:complexType>
 
+    <!-- Cím típus (város, utca, házszám) -->
     <xs:complexType name="CimTipus">
         <xs:sequence>
-            <xs:element name="Varos" type="xs:string"/>
-            <xs:element name="Utca" type="xs:string"/>
-            <xs:element name="Hazszam" type="xs:string"/>
+            <xs:element name="Varos" type="xs:string"></xs:element>
+            <xs:element name="Utca" type="xs:string"></xs:element>
+            <xs:element name="Hazszam" type="xs:string"></xs:element>
         </xs:sequence>
+        <xs:attribute name="Rkod" type="xs:string"></xs:attribute>
     </xs:complexType>
 
+    <!-- Műszakvezető típus -->
+    <xs:complexType name="MuszakVezetoTipus">
+        <xs:complexContent>
+            <xs:extension base="szemelyzet">
+                <xs:attribute name="M_kod" type="xs:string" use="required"></xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="SzakmunkasTipus">
+        <xs:complexContent>
+            <xs:extension base="szemelyzet">
+                <xs:attribute name="Sz_kod" type="xs:string" use="required"></xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="GyakornokTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"></xs:element>
+            <xs:element name="Eletkor" type="korTipus"></xs:element>
+            <xs:element name="Gyakorlat">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Kezdete" type="xs:string"></xs:element>
+                        <xs:element name="Idotartam" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="Gy_kod" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+
+<!-- Megrendelő típus (név, cím, telefonszám) -->
     <xs:complexType name="MegrendeloTipus">
         <xs:sequence>
-            <xs:element name="Nev" type="xs:string"/>
-            <xs:element name="Cim" type="CimTipus"/>
-            <xs:element name="Telefonszam" type="xs:string"/>
+            <xs:element name="Nev" type="xs:string"></xs:element>
+            <xs:element name="Cim" type="CimTipus"></xs:element>
+            <xs:element name="Telefonszam" type="xs:string"></xs:element>
         </xs:sequence>
+        <xs:attribute name="Mkod" use="required"></xs:attribute>
     </xs:complexType>
-
+    
+    <!-- Rendelés típus (termék, összeg, dátum) -->
     <xs:complexType name="RendelesTipus">
         <xs:sequence>
-            <xs:element name="Termek" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
-            <xs:element name="Osszeg" type="xs:decimal"/>
-            <xs:element name="Datum" type="xs:date"/>
+            <xs:element name="Termek" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            <xs:element name="Osszeg" type="xs:string"></xs:element>
+            <xs:element name="Datum" type="xs:string"></xs:element>
         </xs:sequence>
+        <xs:attribute name="Rkod" type="xs:string"></xs:attribute>
+        <xs:attribute name="GyarMR" type="xs:string"></xs:attribute>
     </xs:complexType>
 
     <xs:element name="Ipar">
@@ -47,16 +87,21 @@
                 <xs:element name="Gyar" minOccurs="1" maxOccurs="100">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Nev" type="xs:string"/>
-                            <xs:element name="Cim" type="CimTipus"/>
-                            <xs:element name="Adoszam" type="xs:string"/>
-                            <xs:element name="MuszakVezeto" type="szemelyTipus" minOccurs="1" maxOccurs="100"/>
-                            <xs:element name="Szakmunkas" type="szemelyTipus" minOccurs="1" maxOccurs="100"/>
-                            <xs:element name="Gyakornok" type="szemelyTipus" minOccurs="1" maxOccurs="100"/>
-                            <xs:element name="Megrendelo" type="MegrendeloTipus" minOccurs="1" maxOccurs="100"/>
-                            <xs:element name="Rendeles" type="RendelesTipus" minOccurs="1" maxOccurs="100"/>
+                            <xs:element name="Nev" type="xs:string"></xs:element>
+                            <xs:element name="Cim" type="CimTipus"></xs:element>
+                            <xs:element name="Adoszam" type="xs:string"></xs:element>
+                            <xs:element name="MuszakVezeto" type="MuszakVezetoTipus" minOccurs="1"
+                                maxOccurs="100"></xs:element>
+                            <xs:element name="Szakmunkas" type="SzakmunkasTipus" minOccurs="1"
+                                maxOccurs="100"></xs:element>
+                            <xs:element name="Gyakornok" type="GyakornokTipus" minOccurs="1"
+                                maxOccurs="100"></xs:element>
+                            <xs:element name="Megrendelo" type="MegrendeloTipus" minOccurs="1"
+                                maxOccurs="100"></xs:element>
+                            <xs:element name="Rendeles" type="RendelesTipus" minOccurs="1"
+                                maxOccurs="100"></xs:element>
                         </xs:sequence>
-                        <xs:attribute name="Gyarkod" type="xs:string" use="required"/>
+                        <xs:attribute name="Gyarkod" type="xs:string"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

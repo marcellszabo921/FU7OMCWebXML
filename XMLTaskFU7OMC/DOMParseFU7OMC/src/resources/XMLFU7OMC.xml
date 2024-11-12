@@ -1,445 +1,85 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
     <Gyar Gyarkod="A1">
-        <Nev>KrisztiánNeMSzépDolog</Nev>
+        <Nev>SínCsináló Kft.</Nev>
         <Cim>
-            <Varos>Kassa</Varos>
+            <Varos>Miskolc</Varos>
             <Utca>Szép lány</Utca>
             <Hazszam>54</Hazszam>
         </Cim>
         <Adoszam>111111111-1-11</Adoszam>
-
+        <!-- Több műszakvezető -->
         <MuszakVezeto M_kod="M1">
             <Nev>Trombitás Elemér</Nev>
             <Vegzettseg>Lakatos</Vegzettseg>
             <Eletkor>62</Eletkor>
         </MuszakVezeto>
-        <MuszakVezeto M_kod="M1">
-            <Nev>Trombitás Elemér</Nev>
-            <Vegzettseg>Lakatos</Vegzettseg>
-            <Eletkor>62</Eletkor>
-        </MuszakVezeto>
-        <MuszakVezeto M_kod="M1">
-            <Nev>Trombitás Elemér</Nev>
-            <Vegzettseg>Lakatos</Vegzettseg>
-            <Eletkor>62</Eletkor>
-        </MuszakVezeto>
-
-        <Szakmunkas Sz_kod="SZ1">
-            <Nev>Szabó Gábor</Nev>
-            <Vegzettseg>Kisegítő</Vegzettseg>
-            <Eletkor>32</Eletkor>
-        </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ1">
-            <Nev>Szabó Gábor</Nev>
-            <Vegzettseg>Kisegítő</Vegzettseg>
-            <Eletkor>32</Eletkor>
-        </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ1">
-            <Nev>Szabó Gábor</Nev>
-            <Vegzettseg>Kisegítő</Vegzettseg>
-            <Eletkor>32</Eletkor>
-        </Szakmunkas>
-
-        <Gyakornok Gy_kod="Gyak1">
-            <Nev>Illés Dániel</Nev>
-            <Eletkor>20</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.02.14</Kezdete>
-                <Idotartam>8 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak1">
-            <Nev>Illés Dániel</Nev>
-            <Eletkor>20</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.02.14</Kezdete>
-                <Idotartam>8 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak1">
-            <Nev>Illés Dániel</Nev>
-            <Eletkor>20</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.02.14</Kezdete>
-                <Idotartam>8 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-
-        <Megrendelo Mkod="M1">
-            <Nev>Máv Zrt.</Nev>
-            <Cim>
-                <Varos>Budapest</Varos>
-                <Utca>Máv</Utca>
-                <Hazszam>32</Hazszam>
-            </Cim>
-            <Telefonszam>+36 20 456 4353</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M1">
-            <Nev>Máv Zrt.</Nev>
-            <Cim>
-                <Varos>Budapest</Varos>
-                <Utca>Máv</Utca>
-                <Hazszam>32</Hazszam>
-            </Cim>
-            <Telefonszam>+36 20 456 4353</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M1">
-            <Nev>Máv Zrt.</Nev>
-            <Cim>
-                <Varos>Budapest</Varos>
-                <Utca>Máv</Utca>
-                <Hazszam>32</Hazszam>
-            </Cim>
-            <Telefonszam>+36 20 456 4353</Telefonszam>
-        </Megrendelo>
-
-        <Rendeles GyarMR="GYR1" Rkod="R1">
-            <Termek>Vasúti Sín</Termek>
-            <Osszeg>12,345,654 Ft</Osszeg>
-            <Datum>2024.03.21.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR1" Rkod="R1">
-            <Termek>Vasúti Sín</Termek>
-            <Osszeg>12,345,654 Ft</Osszeg>
-            <Datum>2024.03.21.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR1" Rkod="R1">
-            <Termek>Vasúti Sín</Termek>
-            <Osszeg>12,345,654 Ft</Osszeg>
-            <Datum>2024.03.21.</Datum>
-        </Rendeles>
-    </Gyar>
-    <!--                 -->
-    <Gyar Gyarkod="C3">
-        <Nev>Öntöde Kft.</Nev>
-        <Cim>
-            <Varos>Kecskemét</Varos>
-            <Utca>Király utca</Utca>
-            <Hazszam>78</Hazszam>
-        </Cim>
-        <Adoszam>333333333-3-33</Adoszam>
-
-        <MuszakVezeto M_kod="M4">
-            <Nev>Molnár Károly</Nev>
-            <Vegzettseg>Technikus</Vegzettseg>
-            <Eletkor>48</Eletkor>
-        </MuszakVezeto>
-        <MuszakVezeto M_kod="M5">
-            <Nev>Németh István</Nev>
-            <Vegzettseg>Villanyszerelő</Vegzettseg>
+        <MuszakVezeto M_kod="M2">
+            <Nev>Nagy Ferenc</Nev>
+            <Vegzettseg>Gépész</Vegzettseg>
             <Eletkor>55</Eletkor>
         </MuszakVezeto>
-        <MuszakVezeto M_kod="M6">
-            <Nev>Papp Ferenc</Nev>
-            <Vegzettseg>Fémipari szakember</Vegzettseg>
-            <Eletkor>60</Eletkor>
-        </MuszakVezeto>
-
-        <Szakmunkas Sz_kod="SZ4">
-            <Nev>Oláh László</Nev>
-            <Vegzettseg>Forgácsoló</Vegzettseg>
-            <Eletkor>42</Eletkor>
+        <!-- Több szakmunkás -->
+        <Szakmunkas Sz_kod="SZ1">
+            <Nev>Szabó Gábor</Nev>
+            <Vegzettseg>Kisegítő</Vegzettseg>
+            <Eletkor>32</Eletkor>
         </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ5">
-            <Nev>Tóth Miklós</Nev>
-            <Vegzettseg>Öntő</Vegzettseg>
-            <Eletkor>35</Eletkor>
+        <Szakmunkas Sz_kod="SZ2">
+            <Nev>Kovács László</Nev>
+            <Vegzettseg>Villanyszerelő</Vegzettseg>
+            <Eletkor>45</Eletkor>
         </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ6">
-            <Nev>Szabados Lajos</Nev>
-            <Vegzettseg>Fényező</Vegzettseg>
-            <Eletkor>28</Eletkor>
-        </Szakmunkas>
-
-        <Gyakornok Gy_kod="Gyak4">
-            <Nev>Simon Dániel</Nev>
-            <Eletkor>19</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.04.01</Kezdete>
-                <Idotartam>12 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak5">
-            <Nev>Lukács Anna</Nev>
+        <!-- Több gyakornok -->
+        <Gyakornok Gy_kod="Gyak1">
+            <Nev>Illés Dániel</Nev>
             <Eletkor>20</Eletkor>
             <Gyakorlat>
-                <Kezdete>2024.03.15</Kezdete>
-                <Idotartam>6 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak6">
-            <Nev>Fekete Tamás</Nev>
-            <Eletkor>21</Eletkor>
-            <Gyakorlat>
-                <Kezdete>2024.02.10</Kezdete>
+                <Kezdete>2024.02.14</Kezdete>
                 <Idotartam>8 hét</Idotartam>
             </Gyakorlat>
         </Gyakornok>
-
-        <Megrendelo Mkod="M4">
-            <Nev>RailTech Zrt.</Nev>
-            <Cim>
-                <Varos>Sopron</Varos>
-                <Utca>Gyár utca</Utca>
-                <Hazszam>5</Hazszam>
-            </Cim>
-            <Telefonszam>+36 20 987 1234</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M5">
-            <Nev>TransSteel Kft.</Nev>
-            <Cim>
-                <Varos>Nyíregyháza</Varos>
-                <Utca>Kossuth utca</Utca>
-                <Hazszam>25</Hazszam>
-            </Cim>
-            <Telefonszam>+36 30 765 4321</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M6">
-            <Nev>AcélMűvek Zrt.</Nev>
-            <Cim>
-                <Varos>Székesfehérvár</Varos>
-                <Utca>Vasút sor</Utca>
-                <Hazszam>18</Hazszam>
-            </Cim>
-            <Telefonszam>+36 70 654 7890</Telefonszam>
-        </Megrendelo>
-
-        <Rendeles GyarMR="GYR4" Rkod="R4">
-            <Termek>Öntöttvas Lemez</Termek>
-            <Osszeg>7,654,321 Ft</Osszeg>
-            <Datum>2024.06.25.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR5" Rkod="R5">
-            <Termek>Hőkezelt Acélcső</Termek>
-            <Osszeg>15,321,987 Ft</Osszeg>
-            <Datum>2024.07.12.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR6" Rkod="R6">
-            <Termek>Alumínium Panel</Termek>
-            <Osszeg>6,543,210 Ft</Osszeg>
-            <Datum>2024.08.08.</Datum>
-        </Rendeles>
-    </Gyar>
-    <!--                 -->
-    <Gyar Gyarkod="D4">
-        <Nev>Hegesztők Műhelye Kft.</Nev> 
-        <Cim>
-            <Varos>Pécs</Varos>
-            <Utca>Jókai utca</Utca>
-            <Hazszam>13</Hazszam>
-        </Cim>
-        <Adoszam>444444444-4-44</Adoszam>
-
-        <MuszakVezeto M_kod="M7">
-            <Nev>Szalai Lajos</Nev> 
-            <Vegzettseg>Gépészmérnök</Vegzettseg>
-            <Eletkor>52</Eletkor>
-        </MuszakVezeto>
-        <MuszakVezeto M_kod="M8">
-            <Nev>Tóth Zsuzsa</Nev> 
-            <Vegzettseg>Elektromos mérnök</Vegzettseg>
-            <Eletkor>47</Eletkor>
-        </MuszakVezeto>
-        <MuszakVezeto M_kod="M9">
-            <Nev>Kiss Antal</Nev> 
-            <Vegzettseg>Minőségellenőr</Vegzettseg>
-            <Eletkor>39</Eletkor>
-        </MuszakVezeto>
-
-        <Szakmunkas Sz_kod="SZ7">
-            <Nev>Bíró Dávid</Nev> 
-            <Vegzettseg>Vasbetonszerelő</Vegzettseg>
-            <Eletkor>41</Eletkor>
-        </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ8">
-            <Nev>Varga Kálmán</Nev> 
-            <Vegzettseg>Hegesztő</Vegzettseg>
-            <Eletkor>33</Eletkor>
-        </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ9">
-            <Nev>Gál Andrea</Nev> 
-            <Vegzettseg>Mechanikus</Vegzettseg>
-            <Eletkor>29</Eletkor>
-        </Szakmunkas>
-
-        <Gyakornok Gy_kod="Gyak7">
-            <Nev>Péterfi Balázs</Nev>
-            <Eletkor>22</Eletkor> 
+        <Gyakornok Gy_kod="Gyak2">
+            <Nev>Hegedűs Emese</Nev>
+            <Eletkor>22</Eletkor>
             <Gyakorlat>
-                <Kezdete>2024.05.01</Kezdete>
-                <Idotartam>10 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak8">
-            <Nev>Kertész Nóra</Nev>
-            <Eletkor>20</Eletkor> 
-            <Gyakorlat>
-                <Kezdete>2024.04.10</Kezdete>
+                <Kezdete>2024.02.14</Kezdete>
                 <Idotartam>8 hét</Idotartam>
             </Gyakorlat>
         </Gyakornok>
-        <Gyakornok Gy_kod="Gyak9">
-            <Nev>Kovács Attila</Nev>
-            <Eletkor>23</Eletkor> 
-            <Gyakorlat>
-                <Kezdete>2024.03.05</Kezdete>
-                <Idotartam>6 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-
-        <Megrendelo Mkod="M7">
-            <Nev>Hídépítő Kft.</Nev> 
+        <!-- Több megrendelő -->
+        <Megrendelo Mkod="M1">
+            <Nev>Máv Zrt.</Nev>
             <Cim>
-                <Varos>Győr</Varos>
-                <Utca>Templom utca</Utca>
-                <Hazszam>9</Hazszam>
+                <Varos>Budapest</Varos>
+                <Utca>Máv</Utca>
+                <Hazszam>32</Hazszam>
             </Cim>
-            <Telefonszam>+36 30 123 4567</Telefonszam>
+            <Telefonszam>+36 20 456 4353</Telefonszam>
         </Megrendelo>
-        <Megrendelo Mkod="M8">
-            <Nev>ÉpítőZóna Kft.</Nev> 
-            <Cim>
-                <Varos>Szolnok</Varos>
-                <Utca>Erzsébet utca</Utca>
-                <Hazszam>17</Hazszam>
-            </Cim>
-            <Telefonszam>+36 20 789 4321</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M9">
-            <Nev>VasútTechnika Zrt.</Nev> 
-            <Cim>
-                <Varos>Pápa</Varos>
-                <Utca>Fő utca</Utca>
-                <Hazszam>6</Hazszam>
-            </Cim>
-            <Telefonszam>+36 70 654 3210</Telefonszam>
-        </Megrendelo>
-
-        <Rendeles GyarMR="GYR7" Rkod="R7">
-            <Termek>Rozsdamentes Csigatengely</Termek>
-            <Osszeg>8,765,432 Ft</Osszeg>
-            <Datum>2024.07.15.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR8" Rkod="R8">
-            <Termek>Alumínium Lap</Termek>
-            <Osszeg>10,234,567 Ft</Osszeg>
-            <Datum>2024.08.22.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR9" Rkod="R9">
-            <Termek>Acélgerenda</Termek>
-            <Osszeg>9,876,543 Ft</Osszeg>
-            <Datum>2024.09.10.</Datum>
-        </Rendeles>
-    </Gyar>
-    <!--                 -->
-    <Gyar Gyarkod="E5">
-        <Nev>AcélForma Kft.</Nev> 
-        <Cim>
-            <Varos>Zalaegerszeg</Varos>
-            <Utca>Belső utca</Utca>
-            <Hazszam>27</Hazszam>
-        </Cim>
-        <Adoszam>555555555-5-55</Adoszam>
-
-        <MuszakVezeto M_kod="M10">
-            <Nev>Kovács Imre</Nev> 
-            <Vegzettseg>Acélöntő</Vegzettseg>
-            <Eletkor>53</Eletkor>
-        </MuszakVezeto>
-        <MuszakVezeto M_kod="M11">
-            <Nev>Fehér János</Nev> 
-            <Vegzettseg>Gépésztechnikus</Vegzettseg>
-            <Eletkor>49</Eletkor>
-        </MuszakVezeto>
-        <MuszakVezeto M_kod="M12">
-            <Nev>Tóth Csaba</Nev> 
-            <Vegzettseg>Mechanikus Mérnök</Vegzettseg>
-            <Eletkor>45</Eletkor>
-        </MuszakVezeto>
-
-        <Szakmunkas Sz_kod="SZ10">
-            <Nev>Péterfi László</Nev> 
-            <Vegzettseg>Csőszerelő</Vegzettseg>
-            <Eletkor>40</Eletkor>
-        </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ11">
-            <Nev>Lázár Katalin</Nev> 
-            <Vegzettseg>Hegesztő</Vegzettseg>
-            <Eletkor>38</Eletkor>
-        </Szakmunkas>
-        <Szakmunkas Sz_kod="SZ12">
-            <Nev>Nagy Sándor</Nev> 
-            <Vegzettseg>Öntöde Munkás</Vegzettseg>
-            <Eletkor>30</Eletkor>
-        </Szakmunkas>
-
-        <Gyakornok Gy_kod="Gyak10">
-            <Nev>Gál Róbert</Nev>
-            <Eletkor>22</Eletkor> 
-            <Gyakorlat>
-                <Kezdete>2024.05.01</Kezdete>
-                <Idotartam>8 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak11">
-            <Nev>Németh Ákos</Nev>
-            <Eletkor>24</Eletkor> 
-            <Gyakorlat>
-                <Kezdete>2024.04.18</Kezdete>
-                <Idotartam>10 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-        <Gyakornok Gy_kod="Gyak12">
-            <Nev>Oláh Noémi</Nev>
-            <Eletkor>21</Eletkor> 
-            <Gyakorlat>
-                <Kezdete>2024.03.25</Kezdete>
-                <Idotartam>12 hét</Idotartam>
-            </Gyakorlat>
-        </Gyakornok>
-
-        <Megrendelo Mkod="M10">
-            <Nev>ÉpítGép Kft.</Nev> 
-            <Cim>
-                <Varos>Békéscsaba</Varos>
-                <Utca>Károly utca</Utca>
-                <Hazszam>19</Hazszam>
-            </Cim>
-            <Telefonszam>+36 30 456 7890</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M11">
-            <Nev>BetonForm Zrt.</Nev> 
-            <Cim>
-                <Varos>Szekszárd</Varos>
-                <Utca>Kossuth tér</Utca>
-                <Hazszam>3</Hazszam>
-            </Cim>
-            <Telefonszam>+36 20 321 4567</Telefonszam>
-        </Megrendelo>
-        <Megrendelo Mkod="M12">
-            <Nev>AcélCenter Kft.</Nev> 
+        <Megrendelo Mkod="M2">
+            <Nev>Volánbusz Zrt.</Nev>
             <Cim>
                 <Varos>Debrecen</Varos>
                 <Utca>Nagyerdei körút</Utca>
-                <Hazszam>11</Hazszam>
+                <Hazszam>5</Hazszam>
             </Cim>
-            <Telefonszam>+36 70 789 0123</Telefonszam>
+            <Telefonszam>+36 30 123 4567</Telefonszam>
         </Megrendelo>
-
-        <Rendeles GyarMR="GYR10" Rkod="R10">
-            <Termek>Géplánc alkatrész</Termek>
-            <Osszeg>11,987,654 Ft</Osszeg>
-            <Datum>2024.09.18.</Datum>
+        <!-- Több termék a rendelésben -->
+        <Rendeles GyarMR="GYR1" Rkod="R1">
+            <Termek>Vasúti Sín</Termek>
+            <Termek>Acél Lemez</Termek>
+            <Termek>Csavar</Termek>
+            <Osszeg>12345654.00</Osszeg>
+            <Datum>2024-03-21</Datum>
         </Rendeles>
-        <Rendeles GyarMR="GYR11" Rkod="R11">
-            <Termek>Acéltartó Elem</Termek>
-            <Osszeg>13,765,432 Ft</Osszeg>
-            <Datum>2024.10.12.</Datum>
-        </Rendeles>
-        <Rendeles GyarMR="GYR12" Rkod="R12">
-            <Termek>Betonvas Erősítés</Termek>
-            <Osszeg>8,543,210 Ft</Osszeg>
-            <Datum>2024.11.08.</Datum>
+        <Rendeles GyarMR="GYR2" Rkod="R2">
+            <Termek>Betongerenda</Termek>
+            <Termek>Acélcső</Termek>
+            <Osszeg>5789000.00</Osszeg>
+            <Datum>2024-04-10</Datum>
         </Rendeles>
     </Gyar>
 </Ipar>
