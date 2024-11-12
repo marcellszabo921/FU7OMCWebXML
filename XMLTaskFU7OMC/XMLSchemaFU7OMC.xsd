@@ -56,16 +56,16 @@
     <xs:complexType name="MegrendeloTipus">
         <xs:sequence>
             <xs:element name="Nev" type="xs:string"></xs:element>
-            <xs:element name="Telefonszam" type="xs:string"></xs:element>
             <xs:element name="Cim" type="CimTipus"></xs:element>
+            <xs:element name="Telefonszam" type="xs:string"></xs:element>
         </xs:sequence>
         <xs:attribute name="Mkod" use="required"></xs:attribute>
     </xs:complexType>
 
     <xs:complexType name="RendelesTipus">
         <xs:sequence>
-            <xs:element name="Osszeg" type="xs:integer"></xs:element>
             <xs:element name="Termek" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            <xs:element name="Osszeg" type="xs:string"></xs:element>
             <xs:element name="Datum" type="xs:string"></xs:element>
         </xs:sequence>
         <xs:attribute name="Rkod" type="xs:string"></xs:attribute>
@@ -84,17 +84,17 @@
     <xs:element name="Ipar">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Gyar">
+                <xs:element name="Gyar" minOccurs="1" maxOccurs="100">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="Nev" type="xs:string"></xs:element>
                             <xs:element name="Cim" type="CimTipus"></xs:element>
-                            <xs:element name="Adoszam" type="xs:integer"></xs:element>
-                            <xs:element name="MuszakVezeto" type="MuszakVezetoTipus"></xs:element>
-                            <xs:element name="Szakmunkas" type="SzakmunkasTipus"></xs:element>
-                            <xs:element name="Gyakornok" type="GyakornokTipus"></xs:element>
-                            <xs:element name="Megrendelo" type="MegrendeloTipus"></xs:element>
-                            <xs:element name="Rendeles" type="RendelesTipus"></xs:element>
+                            <xs:element name="Adoszam" type="xs:string"></xs:element>
+                            <xs:element name="MuszakVezeto" type="MuszakVezetoTipus" minOccurs="1" maxOccurs="100"></xs:element>
+                            <xs:element name="Szakmunkas" type="SzakmunkasTipus" minOccurs="1" maxOccurs="100"></xs:element>
+                            <xs:element name="Gyakornok" type="GyakornokTipus" minOccurs="1" maxOccurs="100"></xs:element>
+                            <xs:element name="Megrendelo" type="MegrendeloTipus" minOccurs="1" maxOccurs="100"></xs:element>
+                            <xs:element name="Rendeles" type="RendelesTipus" minOccurs="1" maxOccurs="100"></xs:element>
                         </xs:sequence>
                         <xs:attribute name="Gyarkod" type="xs:string"></xs:attribute>
                     </xs:complexType>
