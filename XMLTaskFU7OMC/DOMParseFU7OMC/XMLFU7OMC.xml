@@ -20,17 +20,24 @@
             <Vegzettseg>Gépész</Vegzettseg>
             <Eletkor>55</Eletkor>
         </MuszakVezeto>
+
         <!-- Több szakmunkás -->
         <Szakmunkas Sz_kod="SZ1">
             <Nev>Szabó Gábor</Nev>
             <Vegzettseg>Kisegítő</Vegzettseg>
-            <Eletkor>32</Eletkor>
+            <Eletkor>30</Eletkor>
         </Szakmunkas>
         <Szakmunkas Sz_kod="SZ2">
             <Nev>Kovács László</Nev>
             <Vegzettseg>Villanyszerelő</Vegzettseg>
-            <Eletkor>45</Eletkor>
+            <Eletkor>40</Eletkor>
         </Szakmunkas>
+        <Szakmunkas Sz_kod="SZ3">
+            <Nev>Kovács László</Nev>
+            <Vegzettseg>Hegesztő</Vegzettseg>
+            <Eletkor>50</Eletkor>
+        </Szakmunkas>
+
         <!-- Több gyakornok -->
         <Gyakornok Gy_kod="Gyak1">
             <Nev>Illés Dániel</Nev>

@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6397aa0-848f-4c9e-bea2-710baddc21e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/XMLFU7OMC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMLSchemaFU7OMC.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FU7OMC_1015/DomParseFU7OMC/DomParseFU7OMC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../FU7OMC_1015/DomParseFU7OMC/DomParseFU7OMC/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLFU7OMC.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMModifyFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMModifyFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMQueryFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMQueryFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMReadFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMReadFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/XMLFU7OMC1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/XMLSchemaFU7OMC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/XMLSchemaFU7OMC.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DOMModifyFU7OMC.executor": "Run",
-    "Application.DOMQueryFU7OMC.executor": "Run",
-    "Application.DOMReadFU7OMC.executor": "Run",
-    "Application.DOMWriteFU7OMC.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/marce/Desktop/FU7OMCWebXML-1/XMLTaskFU7OMC/DOMParseFU7OMC"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DOMModifyFU7OMC.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DOMQueryFU7OMC.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DOMReadFU7OMC.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DOMWriteFU7OMC.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marce/Desktop/FU7OMCWebXML-1/FU7OMC_1015/DomParseFU7OMC&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\marce\Desktop\FU7OMCWebXML-1\XMLTaskFU7OMC\DOMParseFU7OMC" />
@@ -99,6 +93,10 @@
           <line>44</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

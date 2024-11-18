@@ -26,17 +26,17 @@ public class DOMModifyFU7OMC {
             // 1. Módosítás: Műszakvezető név módosítása
             NodeList muszakVezetoList = document.getElementsByTagName("MuszakVezeto");
             Element muszakVezetoElement = (Element) muszakVezetoList.item(0); // Első műszakvezető
-            muszakVezetoElement.getElementsByTagName("Nev").item(0).setTextContent("László Béla");
+            muszakVezetoElement.getElementsByTagName("Nev").item(0).setTextContent("Trombitás Elemér");
 
             // 2. Módosítás: Szakmunkás életkorának módosítása
             NodeList szakmunkasList = document.getElementsByTagName("Szakmunkas");
             Element szakmunkasElement = (Element) szakmunkasList.item(2); // Harmadik szakmunkás
-            szakmunkasElement.getElementsByTagName("Eletkor").item(0).setTextContent("45");
+            szakmunkasElement.getElementsByTagName("Eletkor").item(0).setTextContent("56");
 
             // 3. Módosítás: Gyakornok név módosítása
             NodeList gyakornokList = document.getElementsByTagName("Gyakornok");
             Element gyakornokElement = (Element) gyakornokList.item(1); // Második gyakornok
-            gyakornokElement.getElementsByTagName("Nev").item(0).setTextContent("Kiss Anna");
+            gyakornokElement.getElementsByTagName("Nev").item(0).setTextContent("Hegedűs Emese");
 
             // 4. Módosítás: Megrendelő címének frissítése
             NodeList megrendeloList = document.getElementsByTagName("Megrendelo");
@@ -51,7 +51,7 @@ public class DOMModifyFU7OMC {
             Element rendelesElement = (Element) rendelesList.item(0); // Első rendelés
             NodeList termekNodes = rendelesElement.getElementsByTagName("Termek");
             Element termekElement = (Element) termekNodes.item(1); // Második termék
-            termekElement.getElementsByTagName("Ar").item(0).setTextContent("19999");
+            termekElement.getElementsByTagName("Osszeg").item(0).setTextContent("19999");
 
             // A módosított XML kiírása a konzolra
             TransformerFactory transformerFactory = TransformerFactory.newInstance();

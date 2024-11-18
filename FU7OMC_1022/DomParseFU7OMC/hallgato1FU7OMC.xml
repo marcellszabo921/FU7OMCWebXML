@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hallgatok xmlns="DOMYFU7OMC">
+  <hallgato id="1">
+    <keresztnev>Peter</keresztnev>
+    <vezeteknev>Nagy</vezeteknev>
+    <foglalkozas>Web developer</foglalkozas>
+  </hallgato>
+</hallgatok>
