@@ -49,9 +49,9 @@ public class DOMModifyFU7OMC {
             // 5. Módosítás: Rendelés termék árának módosítása
             NodeList rendelesList = document.getElementsByTagName("Rendeles");
             Element rendelesElement = (Element) rendelesList.item(0); // Első rendelés
-            NodeList termekNodes = rendelesElement.getElementsByTagName("Termek");
-            Element termekElement = (Element) termekNodes.item(1); // Második termék
-            termekElement.getElementsByTagName("Osszeg").item(0).setTextContent("19999");
+            NodeList osszegNodes = rendelesElement.getElementsByTagName("Osszeg");
+            Element osszegElement = (Element) osszegNodes.item(0); // The <Osszeg> element
+            osszegElement.setTextContent("19999"); // Update the value
 
             // A módosított XML kiírása a konzolra
             TransformerFactory transformerFactory = TransformerFactory.newInstance();

@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6397aa0-848f-4c9e-bea2-710baddc21e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../FU7OMC_1015/DomParseFU7OMC/DomParseFU7OMC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../FU7OMC_1015/DomParseFU7OMC/DomParseFU7OMC/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLFU7OMC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLFU7OMC1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLFU7OMC1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMModifyFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMModifyFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMQueryFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMQueryFU7OMC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMQueryFU7OMC.java</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

@@ -53,12 +53,12 @@ public class DOMWriteFU7OMC {
             addGyakornok(document, gyar, "Gyak2", "Hegedűs Emese", 22);
 
             // Megrendelők
-            addMegrendelo(document, gyar, "Máv Zrt.", "Budapest", "Máv", "32", "+36 20 456 4353");
-            addMegrendelo(document, gyar, "Volánbusz Zrt.", "Debrecen", "Nagyerdei körút", "5", "+36 30 123 4567");
+            addMegrendelo(document, gyar, "M1","Máv Zrt.", "Budapest", "Máv", "32", "+36 20 456 4353");
+            addMegrendelo(document, gyar, "M2","Volánbusz Zrt.", "Debrecen", "Nagyerdei körút", "5", "+36 30 123 4567");
 
             // Rendelések
-            addRendeles(document, gyar, "Vasúti Sín", "Acél Lemez", "Csavar", "12345654.00", "2024-03-21");
-            addRendeles(document, gyar, "Betongerenda", "Acélcső", "", "5789000.00", "2024-04-10");
+            addRendeles(document, gyar, "GYR1","R1","Vasúti Sín", "Acél Lemez", "Csavar", "12345654.00", "2024-03-21");
+            addRendeles(document, gyar, "GYR2","R2","Betongerenda", "Acélcső", "", "5789000.00", "2024-04-10");
 
             // A gyár elem hozzáadása a gyökér elemhez
             rootElement.appendChild(gyar);
@@ -82,10 +82,10 @@ public class DOMWriteFU7OMC {
         gyar.appendChild(cim);
     }
 
-    // Munkás vagy műszakvezető hozzáadása
+    // Műszakvezető hozzáadása
     private static void addMuszakVezeto(Document document, Element gyar, String kod, String nev, String vegzettseg, int eletkor) {
         Element muszakVezeto = document.createElement("MuszakVezeto");
-        muszakVezeto.setAttribute("Kod", kod);
+        muszakVezeto.setAttribute("M_kod", kod);
 
         addTextElement(document, muszakVezeto, "Nev", nev);
         addTextElement(document, muszakVezeto, "Vegzettseg", vegzettseg);
@@ -97,7 +97,7 @@ public class DOMWriteFU7OMC {
     // Szakmunkás hozzáadása
     private static void addSzakmunkas(Document document, Element gyar, String kod, String nev, String vegzettseg, int eletkor) {
         Element szakmunkas = document.createElement("Szakmunkas");
-        szakmunkas.setAttribute("Kod", kod);
+        szakmunkas.setAttribute("Sz_kod", kod);
 
         addTextElement(document, szakmunkas, "Nev", nev);
         addTextElement(document, szakmunkas, "Vegzettseg", vegzettseg);
@@ -109,7 +109,7 @@ public class DOMWriteFU7OMC {
     // Gyakornok hozzáadása
     private static void addGyakornok(Document document, Element gyar, String kod, String nev, int eletkor) {
         Element gyakornok = document.createElement("Gyakornok");
-        gyakornok.setAttribute("Kod", kod);
+        gyakornok.setAttribute("Gy_kod", kod);
 
         addTextElement(document, gyakornok, "Nev", nev);
         addTextElement(document, gyakornok, "Eletkor", String.valueOf(eletkor));
@@ -118,8 +118,9 @@ public class DOMWriteFU7OMC {
     }
 
     // Megrendelő hozzáadása
-    private static void addMegrendelo(Document document, Element gyar, String nev, String varos, String utca, String hazszam, String telefonszam) {
+    private static void addMegrendelo(Document document, Element gyar, String kod, String nev, String varos, String utca, String hazszam, String telefonszam) {
         Element megrendelo = document.createElement("Megrendelo");
+        megrendelo.setAttribute("Mkod", kod);
 
         addTextElement(document, megrendelo, "Nev", nev);
         Element cim = document.createElement("Cim");
@@ -134,8 +135,10 @@ public class DOMWriteFU7OMC {
     }
 
     // Rendelés hozzáadása
-    private static void addRendeles(Document document, Element gyar, String termek1, String termek2, String termek3, String osszeg, String datum) {
+    private static void addRendeles(Document document, Element gyar, String kod1, String kod2, String termek1, String termek2, String termek3, String osszeg, String datum) {
         Element rendeles = document.createElement("Rendeles");
+        rendeles.setAttribute("GyarMR", kod1);
+        rendeles.setAttribute("Rkod", kod2);
 
         addTextElement(document, rendeles, "Termek", termek1);
         if (!termek2.isEmpty()) addTextElement(document, rendeles, "Termek", termek2);

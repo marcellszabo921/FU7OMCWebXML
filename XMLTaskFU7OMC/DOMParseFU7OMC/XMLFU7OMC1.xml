@@ -8,35 +8,35 @@
             <Hazszam>54</Hazszam>
         </Cim>
         <Adoszam>111111111-1-11</Adoszam>
-        <MuszakVezeto Kod="M1">
+        <MuszakVezeto M_kod="M1">
             <Nev>Trombitás Elemér</Nev>
             <Vegzettseg>Lakatos</Vegzettseg>
             <Eletkor>62</Eletkor>
         </MuszakVezeto>
-        <MuszakVezeto Kod="M2">
+        <MuszakVezeto M_kod="M2">
             <Nev>Nagy Ferenc</Nev>
             <Vegzettseg>Gépész</Vegzettseg>
             <Eletkor>55</Eletkor>
         </MuszakVezeto>
-        <Szakmunkas Kod="SZ1">
+        <Szakmunkas Sz_kod="SZ1">
             <Nev>Szabó Gábor</Nev>
             <Vegzettseg>Kisegítő</Vegzettseg>
             <Eletkor>32</Eletkor>
         </Szakmunkas>
-        <Szakmunkas Kod="SZ2">
+        <Szakmunkas Sz_kod="SZ2">
             <Nev>Kovács László</Nev>
             <Vegzettseg>Villanyszerelő</Vegzettseg>
             <Eletkor>45</Eletkor>
         </Szakmunkas>
-        <Gyakornok Kod="Gyak1">
+        <Gyakornok Gy_kod="Gyak1">
             <Nev>Illés Dániel</Nev>
             <Eletkor>20</Eletkor>
         </Gyakornok>
-        <Gyakornok Kod="Gyak2">
+        <Gyakornok Gy_kod="Gyak2">
             <Nev>Hegedűs Emese</Nev>
             <Eletkor>22</Eletkor>
         </Gyakornok>
-        <Megrendelo>
+        <Megrendelo Mkod="M1">
             <Nev>Máv Zrt.</Nev>
             <Cim>
                 <Varos>Budapest</Varos>
@@ -45,7 +45,7 @@
             </Cim>
             <Telefonszam>+36 20 456 4353</Telefonszam>
         </Megrendelo>
-        <Megrendelo>
+        <Megrendelo Mkod="M2">
             <Nev>Volánbusz Zrt.</Nev>
             <Cim>
                 <Varos>Debrecen</Varos>
@@ -54,14 +54,14 @@
             </Cim>
             <Telefonszam>+36 30 123 4567</Telefonszam>
         </Megrendelo>
-        <Rendeles>
+        <Rendeles GyarMR="GYR1" Rkod="R1">
             <Termek>Vasúti Sín</Termek>
             <Termek>Acél Lemez</Termek>
             <Termek>Csavar</Termek>
             <Osszeg>12345654.00</Osszeg>
             <Datum>2024-03-21</Datum>
         </Rendeles>
-        <Rendeles>
+        <Rendeles GyarMR="GYR2" Rkod="R2">
             <Termek>Betongerenda</Termek>
             <Termek>Acélcső</Termek>
             <Osszeg>5789000.00</Osszeg>

@@ -23,18 +23,17 @@ public class DOMQueryFU7OMC {
 
             //1. Az összes műszakvezető adatainak kiírása
             queryXMLAllMuszakVezetok(document);
-
+            System.out.println("-------------------------------");
             //2. Az összes szakmunkás adatainak kiírása
             queryXMLAllSzakmunkasok(document);
-
+            System.out.println("-------------------------------");
             //3. Az összes gyakornok adatainak kiírása
             queryXMLAllGyakornokok(document);
-
+            System.out.println("-------------------------------");
             //4. Az összes megrendelő adatainak kiírása
             queryXMLAllMegrendelok(document);
+            System.out.println("-------------------------------");
 
-            //5. Az összes rendelés adatainak kiírása
-            queryXMLAllRendelesek(document);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -43,14 +42,14 @@ public class DOMQueryFU7OMC {
 
     // Műszakvezetők kiírása
     private static void queryXMLAllMuszakVezetok(Document document) {
-        System.out.println("\n1. Az összes műszakvezető adatainak kiírása");
+        System.out.println("\n1. \033 Az összes műszakvezető adatainak kiírása" );
 
         NodeList muszakVezetoNodeList = document.getElementsByTagName("MuszakVezeto");
         for (int i = 0; i < muszakVezetoNodeList.getLength(); i++) {
             Node muszakVezetoNode = muszakVezetoNodeList.item(i);
             if (muszakVezetoNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element muszakVezetoElement = (Element) muszakVezetoNode;
-                String kod = muszakVezetoElement.getAttribute("Kod");
+                String kod = muszakVezetoElement.getAttribute("M_kod");
                 String nev = muszakVezetoElement.getElementsByTagName("Nev").item(0).getTextContent();
                 String vegzettseg = muszakVezetoElement.getElementsByTagName("Vegzettseg").item(0).getTextContent();
                 String eletkor = muszakVezetoElement.getElementsByTagName("Eletkor").item(0).getTextContent();
@@ -73,7 +72,7 @@ public class DOMQueryFU7OMC {
             Node szakmunkasNode = szakmunkasNodeList.item(i);
             if (szakmunkasNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element szakmunkasElement = (Element) szakmunkasNode;
-                String kod = szakmunkasElement.getAttribute("Kod");
+                String kod = szakmunkasElement.getAttribute("Sz_kod");
                 String nev = szakmunkasElement.getElementsByTagName("Nev").item(0).getTextContent();
                 String vegzettseg = szakmunkasElement.getElementsByTagName("Vegzettseg").item(0).getTextContent();
                 String eletkor = szakmunkasElement.getElementsByTagName("Eletkor").item(0).getTextContent();
@@ -96,7 +95,7 @@ public class DOMQueryFU7OMC {
             Node gyakornokNode = gyakornokNodeList.item(i);
             if (gyakornokNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element gyakornokElement = (Element) gyakornokNode;
-                String kod = gyakornokElement.getAttribute("Kod");
+                String kod = gyakornokElement.getAttribute("Gy_kod");
                 String nev = gyakornokElement.getElementsByTagName("Nev").item(0).getTextContent();
                 String eletkor = gyakornokElement.getElementsByTagName("Eletkor").item(0).getTextContent();
 
@@ -117,13 +116,14 @@ public class DOMQueryFU7OMC {
             Node megrendeloNode = megrendeloNodeList.item(i);
             if (megrendeloNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element megrendeloElement = (Element) megrendeloNode;
+                String kod = megrendeloElement.getAttribute("Mkod");
                 String nev = megrendeloElement.getElementsByTagName("Nev").item(0).getTextContent();
                 String varos = megrendeloElement.getElementsByTagName("Varos").item(0).getTextContent();
                 String utca = megrendeloElement.getElementsByTagName("Utca").item(0).getTextContent();
                 String hazszam = megrendeloElement.getElementsByTagName("Hazszam").item(0).getTextContent();
                 String telefonszam = megrendeloElement.getElementsByTagName("Telefonszam").item(0).getTextContent();
 
-                System.out.println("<Megrendelo>");
+                System.out.println("<Megrendelo Kod=\"" + kod + "\">");
                 System.out.println("    <Nev>" + nev + "</Nev>");
                 System.out.println("    <Cim>");
                 System.out.println("        <Varos>" + varos + "</Varos>");
@@ -132,37 +132,6 @@ public class DOMQueryFU7OMC {
                 System.out.println("    </Cim>");
                 System.out.println("    <Telefonszam>" + telefonszam + "</Telefonszam>");
                 System.out.println("</Megrendelo>");
-            }
-        }
-    }
-
-    private static void queryXMLAllRendelesek(Document document) {
-        System.out.println("\n5. Az összes rendelés adatainak kiírása");
-
-        NodeList rendelesNodeList = document.getElementsByTagName("Rendeles");
-        for (int i = 0; i < rendelesNodeList.getLength(); i++) {
-            Node rendelesNode = rendelesNodeList.item(i);
-            if (rendelesNode.getNodeType() == Node.ELEMENT_NODE) {
-                Element rendelesElement = (Element) rendelesNode;
-                NodeList termekNodes = rendelesElement.getElementsByTagName("Termek");
-
-                System.out.println("<Rendeles>");
-                for (int j = 0; j < termekNodes.getLength(); j++) {
-                    Element termekElement = (Element) termekNodes.item(j);
-
-                    // Ellenőrizzük, hogy a "Nev" és "Ar" elemek léteznek, mielőtt kiolvassuk az értéküket
-                    Node nevNode = termekElement.getElementsByTagName("Nev").item(0);
-                    Node arNode = termekElement.getElementsByTagName("Ar").item(0);
-
-                    String nev = (nevNode != null) ? nevNode.getTextContent() : "Nincs megadva";
-                    String ar = (arNode != null) ? arNode.getTextContent() : "Nincs megadva";
-
-                    System.out.println("    <Termek>");
-                    System.out.println("        <Nev>" + nev + "</Nev>");
-                    System.out.println("        <Ar>" + ar + "</Ar>");
-                    System.out.println("    </Termek>");
-                }
-                System.out.println("</Rendeles>");
             }
         }
     }
