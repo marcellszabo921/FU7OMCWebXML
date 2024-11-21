@@ -49,8 +49,8 @@ public class DOMWriteFU7OMC {
             addSzakmunkas(document, gyar, "SZ2", "Kovács László", "Villanyszerelő", 45);
 
             // Gyakornokok
-            addGyakornok(document, gyar, "Gyak1", "Illés Dániel", 20);
-            addGyakornok(document, gyar, "Gyak2", "Hegedűs Emese", 22);
+            addGyakornok(document, gyar, "Gyak1", "Illés Dániel", 20, "2024.02.14","8 hét");
+            addGyakornok(document, gyar, "Gyak2", "Hegedűs Emese", 22,"2024.02.14","8 hét");
 
             // Megrendelők
             addMegrendelo(document, gyar, "M1","Máv Zrt.", "Budapest", "Máv", "32", "+36 20 456 4353");
@@ -107,13 +107,16 @@ public class DOMWriteFU7OMC {
     }
 
     // Gyakornok hozzáadása
-    private static void addGyakornok(Document document, Element gyar, String kod, String nev, int eletkor) {
+    private static void addGyakornok(Document document, Element gyar, String kod, String nev, int eletkor, String kezd, String ido) {
         Element gyakornok = document.createElement("Gyakornok");
         gyakornok.setAttribute("Gy_kod", kod);
 
         addTextElement(document, gyakornok, "Nev", nev);
         addTextElement(document, gyakornok, "Eletkor", String.valueOf(eletkor));
-
+        Element gyak = document.createElement("Gyakorlat");
+        addTextElement(document, gyak, "Kezdete", kezd);
+        addTextElement(document, gyak, "Idotartam", ido);
+        gyakornok.appendChild(gyak);
         gyar.appendChild(gyakornok);
     }
 
