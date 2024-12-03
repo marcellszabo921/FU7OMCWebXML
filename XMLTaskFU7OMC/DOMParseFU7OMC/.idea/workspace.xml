@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6397aa0-848f-4c9e-bea2-710baddc21e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMLFU7OMC1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMLSchemaFU7OMC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/XMLSchemaFU7OMC.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/XMLFU7OMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/XMLSchemaFU7OMC.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FU7OMC_1105/xPathFU7OMC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FU7OMC_1105/xPathFU7OMC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLFU7OMC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XMLSchemaFU7OMC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLSchemaFU7OMC.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

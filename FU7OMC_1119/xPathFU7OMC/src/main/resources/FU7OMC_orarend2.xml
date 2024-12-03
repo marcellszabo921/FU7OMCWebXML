@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<SZK_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Y4O4X0_orarend1.xsd">
+<SZM_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FU7OMC_orarend1.xsd">
         
     <ora id="O0" tipus="elmelet">
                 
@@ -287,4 +287,4 @@
             
     </ora>
     
-</SZK_orarend>
+</SZM_orarend>
