@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Kor típus (1 és 100 közötti egész szám) -->
+    <!-- Egyszerű típus a korhoz -->
     <xs:simpleType name="korTipus">
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="1" />
@@ -9,29 +9,28 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <!-- Személy típus -->
-    <xs:complexType name="szemelyzet">
-        <xs:sequence>
-            <xs:element name="Nev" type="xs:string" />
-            <xs:element name="Vegzettseg" type="xs:string" />
-            <xs:element name="Eletkor" type="korTipus" />
-        </xs:sequence>
-    </xs:complexType>
-
-    <!-- Cím típus -->
+    <!-- Cím komplex típus -->
     <xs:complexType name="CimTipus">
         <xs:sequence>
             <xs:element name="Varos" type="xs:string" />
             <xs:element name="Utca" type="xs:string" />
             <xs:element name="Hazszam" type="xs:string" />
         </xs:sequence>
-        <xs:attribute name="Rkod" type="xs:string" />
+    </xs:complexType>
+
+    <!-- Alapvető személy típus -->
+    <xs:complexType name="SzemelyTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string" />
+            <xs:element name="Vegzettseg" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="Eletkor" type="korTipus" />
+        </xs:sequence>
     </xs:complexType>
 
     <!-- Műszakvezető típus -->
     <xs:complexType name="MuszakVezetoTipus">
         <xs:complexContent>
-            <xs:extension base="szemelyzet">
+            <xs:extension base="SzemelyTipus">
                 <xs:attribute name="M_kod" type="xs:string" use="required" />
             </xs:extension>
         </xs:complexContent>
@@ -40,7 +39,7 @@
     <!-- Szakmunkás típus -->
     <xs:complexType name="SzakmunkasTipus">
         <xs:complexContent>
-            <xs:extension base="szemelyzet">
+            <xs:extension base="SzemelyTipus">
                 <xs:attribute name="Sz_kod" type="xs:string" use="required" />
             </xs:extension>
         </xs:complexContent>
@@ -80,40 +79,78 @@
             <xs:element name="Osszeg" type="xs:string" />
             <xs:element name="Datum" type="xs:string" />
         </xs:sequence>
-        <xs:attribute name="Rkod" type="xs:string" />
-        <xs:attribute name="GyarMR" type="xs:string" />
+        <xs:attribute name="Rkod" type="xs:string" use="required" />
+        <xs:attribute name="GyarMR" type="xs:string" use="required" />
     </xs:complexType>
 
-    <!-- Ipar fő struktúra -->
+    <!-- Gyar típus -->
+    <xs:complexType name="GyarTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string" />
+            <xs:element name="Cim" type="CimTipus" />
+            <xs:element name="Adoszam" type="xs:string" />
+            <xs:element name="MuszakVezeto" type="MuszakVezetoTipus" minOccurs="1"
+                maxOccurs="unbounded" />
+            <xs:element name="Szakmunkas" type="SzakmunkasTipus" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="Gyakornok" type="GyakornokTipus" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="Megrendelo" type="MegrendeloTipus" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="Rendeles" type="RendelesTipus" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="Gyarkod" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <!-- Ipar gyökérelem -->
     <xs:element name="Ipar">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Gyar" minOccurs="1" maxOccurs="100">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Nev" type="xs:string" />
-                            <xs:element name="Cim" type="CimTipus" />
-                            <xs:element name="Adoszam" type="xs:string" />
-                            <xs:element name="MuszakVezeto" type="MuszakVezetoTipus" minOccurs="1" maxOccurs="100" />
-                            <xs:element name="Szakmunkas" type="SzakmunkasTipus" minOccurs="1" maxOccurs="100" />
-                            <xs:element name="Gyakornok" type="GyakornokTipus" minOccurs="1" maxOccurs="100" />
-                            <xs:element name="Megrendelo" type="MegrendeloTipus" minOccurs="1" maxOccurs="100" />
-                            <xs:element name="Rendeles" type="RendelesTipus" minOccurs="1" maxOccurs="100" />
-                        </xs:sequence>
-                        <xs:attribute name="Gyarkod" type="xs:string" />
-                    </xs:complexType>
-                    <!-- Primary key -->
-                    <xs:key name="GyarPrimaryKey">
-                        <xs:selector xpath="Gyar" />
-                        <xs:field xpath="@Gyarkod" />
-                    </xs:key>
-                    <!-- Foreign key kapcsolatok -->
-                    <xs:keyref name="RendelesGyarForeignKey" refer="GyarPrimaryKey">
-                        <xs:selector xpath="Gyar/Rendeles" />
-                        <xs:field xpath="@GyarMR" />
-                    </xs:keyref>
-                </xs:element>
+                <xs:element name="Gyar" type="GyarTipus" minOccurs="1" maxOccurs="unbounded" />
             </xs:sequence>
         </xs:complexType>
+
+        <!-- Elsődleges kulcsok -->
+        <xs:key name="gyar_kulcs">
+            <xs:selector xpath="Gyar" />
+            <xs:field xpath="@Gyarkod" />
+        </xs:key>
+        <xs:key name="muszakvezeto_kulcs">
+            <xs:selector xpath="Gyar/MuszakVezeto" />
+            <xs:field xpath="@M_kod" />
+        </xs:key>
+        <xs:key name="szakmunkas_kulcs">
+            <xs:selector xpath="Gyar/Szakmunkas" />
+            <xs:field xpath="@Sz_kod" />
+        </xs:key>
+
+        <xs:key name="gyakornok_kulcs">
+            <xs:selector xpath="Gyar/Gyakornok" />
+            <xs:field xpath="@Gy_kod" />
+        </xs:key>
+        <xs:key name="rendeles_kulcs">
+            <xs:selector xpath="Gyar/Rendeles" />
+            <xs:field xpath="@Rkod" />
+        </xs:key>
+
+        <!-- Idegen kulcsok -->
+        <xs:keyref name="rendeles_gyar_kulcs" refer="gyar_kulcs">
+            <xs:selector xpath="Gyar/Rendeles" />
+            <xs:field xpath="@GyarMR" />
+        </xs:keyref>
+        <xs:keyref name="muszakvezeto_gyar_kulcs" refer="gyar_kulcs">
+            <xs:selector xpath="Ipar/Gyar/MuszakVezeto" />
+            <xs:field xpath="@M_kod" />
+        </xs:keyref>
+        <xs:keyref name="szakmunkas_gyar_kulcs" refer="gyar_kulcs">
+            <xs:selector xpath="Ipar/Gyar/Szakmunkas" />
+            <xs:field xpath="@Sz_kod" />
+        </xs:keyref>
+        <xs:keyref name="gyakornok_gyar_kulcs" refer="gyar_kulcs">
+            <xs:selector xpath="Ipar/Gyar/Gyakornok" />
+            <xs:field xpath="@Gy_kod" />
+        </xs:keyref>
+        <xs:keyref name="megrendelo_gyar_kulcs" refer="gyar_kulcs">
+            <xs:selector xpath="Ipar/Gyar/Megrendelo" />
+            <xs:field xpath="@Mkod" />
+        </xs:keyref>
+
     </xs:element>
 </xs:schema>

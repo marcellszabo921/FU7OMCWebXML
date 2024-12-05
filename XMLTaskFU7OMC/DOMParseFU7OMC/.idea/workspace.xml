@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6397aa0-848f-4c9e-bea2-710baddc21e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../FU7OMC_1105/xPathFU7OMC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FU7OMC_1105/xPathFU7OMC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FU7OMC_1105/JSONParseFU7OMC/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLFU7OMC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLFU7OMC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLSchemaFU7OMC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/XMLSchemaFU7OMC.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/domparse/fu7omc/DOMWriteFU7OMC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../XMLFU7OMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLFU7OMC.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../XMLSchemaFU7OMC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLSchemaFU7OMC.xsd" afterDir="false" />
     </list>
@@ -43,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marce/Desktop/FU7OMCWebXML-1/FU7OMC_1015/DomParseFU7OMC&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marce/Desktop/FU7OMCWebXML-1/FU7OMC_1112/JSONParseFU7OMC&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -64,13 +69,6 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

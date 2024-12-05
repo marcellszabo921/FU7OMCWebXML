@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Ipar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="XMLSchemaFU7OMC.xsd">
-    <Gyar Gyarkod="A1">
+    <Gyar Gyarkod="GYR1">
         <Nev>SínCsináló Kft.</Nev>
         <Cim>
             <Varos>Miskolc</Varos>
@@ -13,6 +13,7 @@
         <MuszakVezeto M_kod="M1">
             <Nev>Trombitás Elemér</Nev>
             <Vegzettseg>Lakatos</Vegzettseg>
+            <Vegzettseg>Hegesztő</Vegzettseg>
             <Eletkor>62</Eletkor>
         </MuszakVezeto>
         <MuszakVezeto M_kod="M2">
@@ -25,11 +26,14 @@
         <Szakmunkas Sz_kod="SZ1">
             <Nev>Szabó Gábor</Nev>
             <Vegzettseg>Kisegítő</Vegzettseg>
+            <Vegzettseg>Hegesztő</Vegzettseg>
+            <Vegzettseg>Virágkötő</Vegzettseg>
             <Eletkor>30</Eletkor>
         </Szakmunkas>
         <Szakmunkas Sz_kod="SZ2">
             <Nev>Kovács László</Nev>
             <Vegzettseg>Villanyszerelő</Vegzettseg>
+            <Vegzettseg>Kisegítő</Vegzettseg>
             <Eletkor>40</Eletkor>
         </Szakmunkas>
         <Szakmunkas Sz_kod="SZ3">
@@ -82,7 +86,7 @@
             <Osszeg>12345654.00</Osszeg>
             <Datum>2024-03-21</Datum>
         </Rendeles>
-        <Rendeles GyarMR="GYR2" Rkod="R2">
+        <Rendeles GyarMR="GYR1" Rkod="R2">
             <Termek>Betongerenda</Termek>
             <Termek>Acélcső</Termek>
             <Osszeg>5789000.00</Osszeg>

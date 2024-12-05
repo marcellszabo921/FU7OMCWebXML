@@ -170,7 +170,7 @@ public class DOMWriteFU7OMC {
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
             // Fájlba írás
-            File xmlFile = new File("XMLFU7OMC1.xml");
+            File xmlFile = new File("XMLFU7OMC2.xml");
             transformer.transform(new DOMSource(document), new StreamResult(xmlFile));
 
             // Konzolra írás
