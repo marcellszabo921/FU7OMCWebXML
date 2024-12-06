@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     
-<SZM_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="FU7OMC_orarend1.xsd">
+<SZM_orarend >
 
     <ora id="O0" tipus="elmelet">
         <targy>Elektrotechnika és elektronika</targy>
