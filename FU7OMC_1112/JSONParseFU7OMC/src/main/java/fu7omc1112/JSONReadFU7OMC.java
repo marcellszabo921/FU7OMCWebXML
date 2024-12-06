@@ -2,14 +2,13 @@ package fu7omc1112;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.JsonObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 
 public class JSONReadFU7OMC {
     public static void main(String[] args) {
-        try (FileReader reader = new FileReader("src/resources/orarendFU7OMC.JSON")){
+        try (FileReader reader = new FileReader("src/main/resources/orarendFU7OMC.JSON")){
             JSONParser parser = new JSONParser();
             JSONObject obejct = (JSONObject) parser.parse(reader);
 
